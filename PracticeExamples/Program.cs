@@ -252,6 +252,7 @@ static List<UserData> GetUserData(IMongoCollection<UserData> collection )
 
 }
 
+// print the names
 foreach (UserData user in userList)
 {
     Console.WriteLine(user.name);
