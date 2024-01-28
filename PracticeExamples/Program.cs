@@ -140,6 +140,46 @@ using MongoDB.Driver;
 //    Console.WriteLine(index);
 //}
 
+//integer Array Sorting (ASC,DSC)
+//int[] input = { 8, -1, 0, 5, 1, 3, 2, 9 };
+
+
+//static int[] sortAsc(int[] arr, int a)
+//{
+//    int n = arr.Length;
+//    if (a == 0)
+//    {
+//        for (int i = 0; i < (n - 1); i++)
+//        {
+//            for (int j = 0; j < (n - 1); j++)
+//                if (arr[j] > arr[j + 1])
+//                {
+//                    int temp = arr[j];
+//                    arr[j] = arr[j + 1];
+//                    arr[j + 1] = temp;
+//                }
+//        }
+//    }
+//    else
+//    {
+//        for (int i = 0; i < (n - 1); i++)
+//        {
+//            for (int j = 0; j < (n - 1); j++)
+//                if (arr[j] < arr[j + 1])
+//                {
+//                    int temp = arr[j];
+//                    arr[j] = arr[j + 1];
+//                    arr[j + 1] = temp;
+//                }
+//        }
+//    }
+//    return arr;
+
+
+//}
+
+//Console.Write("{" +string.Join(',',sortAsc(input,1))+ "}");
+
 ////Lambda Expression using List
 
 //List<int> numbers = new List<int> { 1,2,3,4,5};
@@ -167,43 +207,6 @@ using MongoDB.Driver;
 // 3,6,9 - fizz   5,10 - buzz    15-fizzbuzz
 
 
-int[] input = { 8,-1,0,5, 1, 3 ,2,9};
-
-
-static int[] sortAsc(int[] arr, int a)
-{
-    int n = arr.Length;
-    if (a == 0)
-    {
-        for (int i = 0; i < (n - 1); i++)
-        {
-            for (int j = 0; j < (n - 1); j++)
-                if (arr[j] > arr[j + 1])
-                {
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
-        }
-    }
-    else {
-        for (int i = 0; i < (n - 1); i++)
-        {
-            for (int j = 0; j < (n - 1); j++)
-                if (arr[j] < arr[j + 1])
-                {
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
-        }
-    }
-        return arr;
-    
-
-}
-
-//Console.Write("{" +string.Join(',',sortAsc(input,1))+ "}");
 
 //IList <student> studentList = new List<student>()
 //{
